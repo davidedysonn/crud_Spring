@@ -1,0 +1,782 @@
+!SESSION 2023-07-10 14:57:30.122 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data C:\Users\Dell\Documents\GIT -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-10 14:57:31.116
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-10 14:57:32.016
+!MESSAGE Logback config file: C:\Users\Dell\Documents\GIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-07-10 14:57:33.522
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-10 14:57:33.522
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-10 14:57:36.262
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 14:58:13.805
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 14:58:17.136
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 14:58:17.137
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 14:58:17.137
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 14:58:17.263
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 14:58:17.375
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-10 14:58:17.385
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10228
+
+!ENTRY org.eclipse.jface 2 0 2023-07-10 14:58:31.037
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-10 14:58:31.037
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-10 15:00:50.808
+!MESSAGE Could not get hover region due to timeout after 1000 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-10 15:00:51.820
+!MESSAGE Could not get hover information due to timeout after 1000 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-10 15:01:16.816
+!MESSAGE Could not get hover region due to timeout after 1000 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:155)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-07-10 15:01:16.824
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:76)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 15:05:18.369
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 15:05:19.457
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 15:05:21.133
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 15:05:26.770
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-07-10 15:05:32.465
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-openfeign:3.1.1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.1.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:584)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:553)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:538)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.1.1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-07-10 15:05:32.465
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.1.1
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2023-07-10 15:05:32.465
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:sources:3.1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-07-10 15:05:32.534
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter:3.1.1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:584)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:553)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:538)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-07-10 15:05:32.534
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.1
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2023-07-10 15:05:32.534
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.1.1
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:05:33.283
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:05:33.439
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 15:05:44.233
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:06:39.907
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:09:16.023
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:10:21.036
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:12:26.912
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:12:32.539
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:14:36.135
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:18:49.160
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:20:43.048
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:23:41.790
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:24:41.955
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:25:39.691
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:25:52.762
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:26:49.823
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:27:23.755
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:28:02.094
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:28:42.440
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:31:10.653
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:35:28.527
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:35:57.745
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:36:06.507
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:37:00.885
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:40:11.814
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:42:57.264
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:43:09.385
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:47:58.026
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:48:30.917
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:50:35.963
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:50:42.542
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:52:04.058
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:52:53.036
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:53:34.646
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:54:13.668
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 15:57:12.415
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:02:14.222
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:02:34.092
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:05:48.306
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-07-10 16:06:14.757
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-openfeign:3.1.1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.1.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:584)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:553)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:538)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.1.1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-07-10 16:06:14.757
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.1.1
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2023-07-10 16:06:14.757
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-openfeign:jar:javadoc:3.1.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 16:06:15.188
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-10 16:09:35.483
+!MESSAGE Could not get trigger characters due to timeout after 50 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getFuture(LSContentAssistProcessor.java:274)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.getCompletionProposalAutoActivationCharacters(LSContentAssistProcessor.java:310)
+	at org.eclipse.jface.text.contentassist.IContentAssistProcessorExtension$1.isCompletionProposalAutoActivation(IContentAssistProcessorExtension.java:115)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.getAutoActivationTriggerType(ContentAssistant.java:1248)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.keyPressed(ContentAssistant.java:345)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.verifyKey(ContentAssistant.java:374)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:480)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:70)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5742)
+	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4865)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4743)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 16:09:54.060
+!MESSAGE Classpath changed for project: demo
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:09:55.200
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:09:55.309
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+!SESSION 2023-07-10 16:29:13.949 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-10 16:29:14.941
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-10 16:29:17.603
+!MESSAGE Logback config file: C:\Users\Dell\Documents\GIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-07-10 16:29:19.415
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-10 16:29:19.416
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-10 16:29:24.913
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 16:29:25.311
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 16:29:25.311
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 16:29:25.315
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-10 16:29:25.410
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-10 16:29:25.626
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 1400
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:30:37.216
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:30:47.591
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:44:58.070
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:47:24.750
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:47:37.926
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:51:22.881
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:52:36.445
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 16:54:49.988
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-10 17:00:59.457
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+!SESSION 2023-07-11 08:27:30.685 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-11 08:27:35.075
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-11 08:27:42.559
+!MESSAGE Logback config file: C:\Users\Dell\Documents\GIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-07-11 08:27:55.474
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-11 08:27:55.474
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-11 08:27:59.125
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-11 08:27:59.173
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 4656
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-11 08:27:59.774
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-11 08:28:01.419
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-11 08:28:01.419
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-11 08:28:01.421
+!MESSAGE Started Boot LS process
+!SESSION 2023-07-12 14:03:12.906 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-12 14:03:13.950
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-12 14:03:30.223
+!MESSAGE Logback config file: C:\Users\Dell\Documents\GIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-07-12 14:03:32.420
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-12 14:03:32.420
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:03:39.408
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-12 14:03:39.445
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 10048
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-12 14:03:41.247
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:03:42.133
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:03:42.134
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:03:42.135
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 14:03:50.045
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 14:03:50.786
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-07-12 14:04:12.976
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.core.runtime.jobs.Job$2
+!SESSION 2023-07-12 14:04:13.300 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-12 14:04:14.277
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-07-12 14:04:17.275
+!MESSAGE Logback config file: C:\Users\Dell\Documents\GIT\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-07-12 14:04:19.010
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-07-12 14:04:19.010
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:04:21.245
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-07-12 14:04:21.266
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 6204
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-07-12 14:04:22.546
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:04:22.703
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:04:22.703
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-07-12 14:04:22.705
+!MESSAGE Started Boot LS process
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 14:39:25.059
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:24:31.496
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:25:04.873
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:26:22.869
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:27:51.501
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:41:52.898
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:41:55.102
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 15:56:57.316
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:34:02.172
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:35:16.910
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-07-12 16:35:22.562
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:35:35.184
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:41:59.909
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:48:40.864
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:50:14.219
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 16:51:25.071
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2023-07-12 17:01:17.334
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.6.7.Final

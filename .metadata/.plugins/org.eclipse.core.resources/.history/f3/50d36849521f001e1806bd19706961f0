@@ -1,0 +1,28 @@
+package com.example.demo.service.serviceimpl;
+
+import com.example.demo.models.Pessoa;
+import com.example.demo.repository.PessoaRepository;
+import com.example.demo.service.PessoaService;
+import com.example.demo.service.dto.PessoaDto;
+
+public class PessoaServiceImpl implements PessoaService{
+
+	private PessoaRepository pessoaRepository;
+	
+	public PessoaServiceImpl(PessoaRepository pessoaRepository) {
+		this.pessoaRepository = pessoaRepository;
+	}
+
+
+
+	@Override
+	public PessoaDto salvarPessoa(PessoaDto pessoaDto) {
+		Pessoa pessoa = new Pessoa();
+		pessoa.setName(pessoaDto.getName());
+		pessoaRepository.save(pessoa);
+		
+	}
+
+	
+	
+}

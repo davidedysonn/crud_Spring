@@ -1,0 +1,44 @@
+package com.example.demo.service.serviceimpl;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.models.Pessoa;
+import com.example.demo.repository.PessoaRepository;
+import com.example.demo.service.PessoaService;
+import com.example.demo.service.dto.PessoaDto;
+
+@Service
+public class PessoaServiceImpl implements PessoaService{
+	
+	
+
+	private PessoaRepository pessoaRepository;
+	
+	public PessoaServiceImpl(PessoaRepository pessoaRepository) {
+		this.pessoaRepository = pessoaRepository;
+	}
+
+	private Pessoa toEntity(PessoaDto pessoaDto) {
+		Pessoa pessoaToEntity = new Pessoa();
+		pessoaToEntity.setId(pessoaDto.getId());
+		pessoaToEntity.setName(pessoaDto.getName());
+		
+		return null;
+	}
+
+
+	@Override
+	public PessoaDto salvarPessoa(PessoaDto pessoaDto) {
+		Pessoa pessoa = new Pessoa();
+		pessoa.setName(pessoaDto.getName());
+		Pessoa respostaPessoa = pessoaRepository.save(pessoa);
+		
+		PessoaDto respostaPessoaDto = new PessoaDto();
+		respostaPessoaDto.setName(respostaPessoa.getName());
+		respostaPessoaDto.setId(respostaPessoa.getId());
+		return respostaPessoaDto;
+	}
+
+	
+	
+}

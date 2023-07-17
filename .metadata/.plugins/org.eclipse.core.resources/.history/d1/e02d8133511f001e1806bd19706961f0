@@ -1,0 +1,18 @@
+package com.example.demo.service.serviceimpl;
+
+import com.example.demo.models.Pessoa;
+import com.example.demo.service.PessoaService;
+import com.example.demo.service.dto.PessoaDto;
+
+public class PessoaServiceImpl implements PessoaService{
+
+	@Override
+	public void salvarPessoa(PessoaDto pessoaDto) {
+		Pessoa pessoa = new Pessoa();
+		pessoa.setName(pessoaDto.getName());
+		
+	}
+
+	
+	
+}
